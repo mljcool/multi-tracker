@@ -1,37 +1,98 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const HeroSection = () => {
   return (
-    <section id='hero' className='hero d-flex align-items-center'>
-      <div className='container'>
+    <Fragment>
+      <div className='container animation-sequence'>
         <div className='row'>
-          <div
-            className='col-lg-6 hero-img'
-            data-aos='zoom-out'
-            data-aos-delay='200'>
-            <img src='/img/hero-img.png' className='img-fluid' alt='' />
+          <div className='col-lg-3'>
+            <div className='box' data-aos='fade-down-left' data-aos-delay='200'>
+              <img
+                src='/img/hero/seq-1.png'
+                className='img-fluid c-icons-tv'
+                alt=''
+              />
+            </div>
           </div>
-          <div className='col-lg-6 d-flex flex-column justify-content-center'>
-            <h1 data-aos='fade-up'>
-              We offer modern solutions for growing your business
-            </h1>
-            <h2 data-aos='fade-up' data-aos-delay='400'>
-              We are team of talented designers making websites with Bootstrap
-            </h2>
-            <div data-aos='fade-up' data-aos-delay='600'>
-              <div className='text-center text-lg-start'>
-                <a
-                  href='#about'
-                  className='btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center'>
-                  <span>Get Started</span>
-                  <i className='bi bi-arrow-right'></i>
-                </a>
+
+          <div className='col-lg-3 mt-3 mt-lg-0'>
+            <div className='box' data-aos='fade-down-left' data-aos-delay='400'>
+              <div className='custom-icons'>
+                <img
+                  src='/img/hero/seq-2.png'
+                  className='img-fluid c-icons-ticket'
+                  alt=''
+                />
               </div>
+            </div>
+          </div>
+
+          <div className='col-lg-3 mt-3 mt-lg-0'>
+            <div className='box' data-aos='fade-down-left' data-aos-delay='600'>
+              <img
+                src='/img/hero/seq-3.png'
+                className='img-fluid c-icons-timelapse'
+                alt=''
+              />
+            </div>
+          </div>
+          <div className='col-lg-3 mt-3 mt-lg-0'>
+            <div className='box' data-aos='fade-down-left' data-aos-delay='600'>
+              <img
+                src='/img/hero/seq-4.png'
+                className='img-fluid c-icons-timelapse'
+                alt=''
+              />
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <section id='hero' className='hero d-flex align-items-center'>
+        {/* <div className='animate-sequence'>
+          <div data-aos='fade-down-left' data-aos-delay='200'>
+            <img src='/img/hero/seq-1.png' />
+          </div>
+          <div data-aos='fade-down-left' data-aos-delay='400'>
+            <img src='/img/hero/seq-2.png' />
+          </div>
+          <div data-aos='fade-down-left' data-aos-delay='800'>
+            <img src='/img/hero/seq-3.png' />
+          </div>
+          <div data-aos='fade-down-left' data-aos-delay='600'>
+            <img src='/img/hero/seq-4.png' />
+          </div>
+        </div> */}
+        <div className='background-clip'>
+          <div className='background-clip-two'></div>
+        </div>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-6 hero-img'>
+              <img src='/img/hero/hero.png' className='img-fluid' alt='' />
+            </div>
+            <div className='col-lg-6 d-flex flex-column justify-content-center'>
+              <h1 data-aos='fade-up'>
+                TRACK <br /> YOUR MULTI, <br />
+                REAL TIME.
+              </h1>
+              <h2 data-aos='fade-up' data-aos-delay='400'>
+                With this easy to use app it will allow you to see how your
+                multi is going by <br />a click of a button.
+              </h2>
+              <div data-aos='fade-up' data-aos-delay='600'>
+                <div className='text-center text-lg-start'>
+                  <a
+                    href='#contact'
+                    className='btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center'>
+                    <span>CONTACT US</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Fragment>
   );
 };
 

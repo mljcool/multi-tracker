@@ -1,15 +1,23 @@
 import HeaderNav from '@components/landing-page/HeaderNav';
-import React from 'react';
+import React, { Fragment } from 'react';
+import ContactUsSection from './ContactUsSection';
 import HeroSection from './HeroSection';
-import ShocaseSection from './ShocaseSection';
+import ShowCaseSection from './ShowCaseSection';
+import BenefitsSection from './BenefitsSection';
+import BunosFeatureSection from './BunosFeatureSection';
+import KeyFeature from './KeyFeature';
 
 function index() {
   return (
-    <div>
-      <HeaderNav></HeaderNav>
+    <Fragment>
+      <HeaderNav />
       <HeroSection />
-      <ShocaseSection />
-    </div>
+      <BenefitsSection />
+      <KeyFeature />
+      <BunosFeatureSection />
+      <ShowCaseSection />
+      <ContactUsSection />
+    </Fragment>
   );
 }
 
