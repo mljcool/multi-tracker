@@ -8,13 +8,27 @@ function KeyFeature() {
       <div className='container'>
         <div className='row'>
           <div className='col-lg-6 hero-img'>
+            <div className='feature-bg-animation'>
+              <img
+                src='/img/key-features/animations/basketball.png'
+                className='img-fluid basketball '
+                alt='Tracking-Multi-Tracker'
+                data-aos='fade-up-right'
+              />
+              <img
+                src='/img/key-features/animations/football.png'
+                className='img-fluid football '
+                alt='Tracking-Multi-Tracker'
+                data-aos='fade-down-left'
+              />
+            </div>
             <img
               src='/img/key-features/Tracking.png'
               className='img-fluid tracker-img'
               alt='Tracking-Multi-Tracker'
             />
           </div>
-          <div className='col-lg-6 d-flex flex-column'>
+          <div className='col-lg-6 d-flex flex-column key-feature-details'>
             <h2 className='feat-h'>Key Features</h2>
             <h1>
               A BETTER WAY TO <br /> ENGAGE WITH <br /> THE GAME
@@ -65,7 +79,7 @@ function KeyFeature() {
                   />
                 </div>
                 <div className='feature-details'>
-                  <span className='feature-title'>REALTIM RESULTS</span>
+                  <span className='feature-title'>REALTIME RESULTS</span>
                   <p>
                     See those green ticks appear straight away as
                     <br />
