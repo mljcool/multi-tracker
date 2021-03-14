@@ -3,9 +3,9 @@ import React from 'react';
 function BenefitsSection() {
   return (
     <section id='benefits' className='benefits'>
-      <div className='container' data-aos='fade-up'>
+      <div className='container container-benefits'>
         <header className='section-header'>
-          <h2>Benefits</h2>
+          <h2 className='benefits-title'>Benefits</h2>
           <p>WHY MULTI TRACKER</p>
         </header>
 

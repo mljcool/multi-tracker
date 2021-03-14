@@ -27,7 +27,7 @@ function HeaderNav() {
             <ul>
               <li>
                 <a
-                  href='#'
+                  href='#bunos-sections'
                   onClick={() => {
                     settoggleClass('');
                   }}>
@@ -40,18 +40,18 @@ function HeaderNav() {
                   onClick={() => {
                     settoggleClass('');
                   }}
-                  href='#'>
+                  href='#key-features-sections'>
                   CONCEPT
                 </a>
               </li>
               <li>
                 <a
-                  className='contactUs'
+                  className='contactUs btn-effects'
                   href='#contact'
                   onClick={() => {
                     settoggleClass('');
                   }}>
-                  CONTACT US
+                  <span>CONTACT US</span>
                 </a>
               </li>
             </ul>

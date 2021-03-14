@@ -25,7 +25,7 @@ function BunosFeatureSection() {
               <div className='text-center text-lg-start'>
                 <a
                   href='#contact'
-                  className='btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center'>
+                  className='btn-get-started btn-effects scrollto d-inline-flex align-items-center justify-content-center align-self-center'>
                   <span>CONTACT US</span>
                 </a>
               </div>

@@ -49,7 +49,9 @@ function ContacUsSection() {
               </div>
 
               <div className='col-md-12 text-center'>
-                <button type='submit'>Send</button>
+                <button type='submit' className='btn-effects btn-submit'>
+                  <span>Send</span>
+                </button>
               </div>
             </div>
           </form>

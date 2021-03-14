@@ -75,6 +75,42 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Button Global
+--------------------------------------------------------------*/
+
+.btn-effects {
+  position: relative;
+  cursor: pointer;
+  transition: all 1s ease;
+  overflow: hidden;
+  background: #ebe05b;
+  border: 0;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    transition: all 1s ease;
+    top: 60px;
+    left: 0;
+  }
+  > span {
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    transition: all 1s ease;
+  }
+  &:hover:before {
+    top: 0;
+  }
+}
+/*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
@@ -121,7 +157,7 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #8894f6;
+  color: #fff;
   content: '/';
 }
 
@@ -173,6 +209,7 @@ section {
 .header {
   transition: all 0.5s;
   z-index: 997;
+  margin-top: 10pt;
   .header-scrolled {
     background: #fff;
     padding: 15px 0;
@@ -222,7 +259,7 @@ section {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #013289;
+    color: #fff;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -246,11 +283,6 @@ section {
   color: black;
   background: #ebe05b;
   border-radius: 30px;
-}
-
-.navbar .contactUs:hover {
-  color: #fff;
-  background: #5969f3;
 }
 
 .navbar .dropdown ul {
@@ -383,9 +415,9 @@ section {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
-  color: #4154f1;
-}
+// .navbar-mobile li:hover > a {
+//   color: #4154f1;
+// }
 
 .navbar-mobile .contactUs {
   margin: 15px;
@@ -428,6 +460,9 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.animation-sequence {
+  position: absolute;
+}
 .hero {
   // background: black;
   width: 100%;
@@ -456,21 +491,7 @@ section {
     transition: 0.5s;
     color: black;
     background: #ebe05b;
-    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
-  }
-  .btn-get-started span {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 1px;
-  }
-  .btn-get-started i {
-    margin-left: 5px;
-    font-size: 18px;
-    transition: 0.3s;
-  }
-  .btn-get-started:hover i {
-    transform: translateX(5px);
+    box-shadow: 0px 5px 30px rgb(253 253 255 / 15%);
   }
   .hero-img {
     text-align: right;
@@ -712,6 +733,15 @@ section {
 # Values
 --------------------------------------------------------------*/
 .benefits {
+  .container-benefits {
+    margin-top: 4rem;
+    p {
+      color: black;
+    }
+  }
+  .benefits-title {
+    color: #29b473 !important;
+  }
   .box {
     padding: 30px;
     text-align: center;
@@ -719,7 +749,7 @@ section {
     height: 100%;
     h3 {
       font-size: 24px;
-      color: #012970;
+      color: #000;
       font-weight: 700;
       margin-bottom: 18px;
     }
@@ -783,7 +813,6 @@ section {
     }
   }
   .testimonials-slider {
-    // height: 81vh;
     margin-top: -55rem;
   }
   .phone-frame {
@@ -814,19 +843,11 @@ section {
   );
   .showcases-item {
     box-sizing: content-box;
-    // padding: 30px;
-    // margin: 40px 30px;
-    // box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
-
-    // min-height: 320px;
     display: flex;
     flex-direction: column;
     text-align: center;
     transition: 0.3s;
-    .show-img-slides {
-      // border: 4px solid #fff;
-      // margin: 0 auto;
-    }
+
     h3 {
       font-size: 18px;
       font-weight: bold;
@@ -952,18 +973,13 @@ section {
       padding: 12px 15px;
       border-radius: 2px;
     }
-    button[type='submit'] {
-      background: #ebe05b;
-      border: 0;
+    .btn-submit {
       padding: 10px 30px;
       color: #000;
       font-size: 21px;
       font-weight: bolder;
       transition: 0.4s;
       border-radius: 30px;
-    }
-    button[type='submit']:hover {
-      background: #5969f3;
     }
   }
   @media screen and (max-width: 768px) {
