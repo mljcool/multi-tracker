@@ -12,11 +12,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #444444;
-}
-
 a {
   color: #4154f1;
   text-decoration: none;
@@ -33,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Draft-Bold', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -559,6 +554,7 @@ section {
   .feat-h {
     color: #29b473;
     padding: 20pt 0pt 10px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   h1 {
     margin: 0;
@@ -597,6 +593,8 @@ section {
     }
     > p {
       font-size: 14px;
+      color: #838383;
+      font-weight: 500;
     }
   }
   .box-icons {
@@ -752,6 +750,10 @@ section {
       color: #000;
       font-weight: 700;
       margin-bottom: 18px;
+    }
+    > p {
+      font-weight: bold;
+      font-size: 23px;
     }
   }
   .box-icons {

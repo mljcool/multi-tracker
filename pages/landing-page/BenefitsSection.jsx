@@ -38,8 +38,10 @@ function BenefitsSection() {
                 />
               </div>
               <p>
-                One page, one multi, many legs. See just how close you are in
-                securing that luscious green stick
+                One page, one multi, <br />
+                many legs. See just how <br />
+                close you are in securing
+                <br /> that luscious green stick
               </p>
             </div>
           </div>
@@ -55,8 +57,9 @@ function BenefitsSection() {
                 />
               </div>
               <p>
-                Multi Tracker helping the user to save time is what we are all
-                about.
+                Multi Tracker helping the
+                <br /> user to save time is what
+                <br /> we are all about.
               </p>
             </div>
           </div>
