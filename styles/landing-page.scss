@@ -777,6 +777,27 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .show-case-section {
+  .show-case-wrapper {
+    @media (min-width: 1400px) {
+      max-width: 100% !important;
+    }
+  }
+  .testimonials-slider {
+    // height: 81vh;
+    margin-top: -55rem;
+  }
+  .phone-frame {
+    display: flex;
+    width: 492px;
+    position: relative;
+    z-index: 99;
+    justify-content: center;
+    margin: 0 auto;
+    top: 58.4rem;
+    > img {
+      width: 492px;
+    }
+  }
   .section-header {
     margin-top: 20px;
     h2,
@@ -791,22 +812,20 @@ section {
     rgba(47, 178, 49, 1) 47%,
     rgba(76, 223, 4, 1) 91%
   );
-  .testimonial-item {
+  .showcases-item {
     box-sizing: content-box;
-    padding: 30px;
-    margin: 40px 30px;
-    box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
-    background: #fff;
-    min-height: 320px;
+    // padding: 30px;
+    // margin: 40px 30px;
+    // box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+
+    // min-height: 320px;
     display: flex;
     flex-direction: column;
     text-align: center;
     transition: 0.3s;
-    .testimonial-img {
-      width: 90px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin: 0 auto;
+    .show-img-slides {
+      // border: 4px solid #fff;
+      // margin: 0 auto;
     }
     h3 {
       font-size: 18px;
@@ -824,20 +843,7 @@ section {
       margin: 0 auto 15px auto;
     }
   }
-  .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-    .swiper-pagination-bullet {
-      width: 12px;
-      height: 12px;
-      background-color: #fff;
-      opacity: 1;
-      border: 1px solid #4154f1;
-    }
-    .swiper-pagination-bullet-active {
-      background-color: #4154f1;
-    }
-  }
+
   // .swiper-slide {
   //   opacity: 0.3;
   // }
@@ -856,8 +862,13 @@ section {
 
 @media (min-width: 1200px) {
   .show-case-section .swiper-slide-next {
+    height: 100px;
     opacity: 1;
     transform: scale(1.12);
+    margin-top: -2px;
+    .show-img-slides {
+      border-radius: 30px;
+    }
   }
 }
 
@@ -865,6 +876,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
+  margin-top: -21px;
   .contact-section {
     margin-top: 5rem;
     margin-bottom: -20px;
@@ -952,6 +964,16 @@ section {
     }
     button[type='submit']:hover {
       background: #5969f3;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .form-contact {
+      width: 100% !important;
+    }
+  }
+  @media (max-width: 991px) {
+    .form-contact {
+      width: 100% !important;
     }
   }
 }
