@@ -13,6 +13,7 @@ import 'swiper/swiper-bundle.min.css';
 const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
     AOS.init();
+    AOS.refresh();
   }, []);
   return <Component {...pageProps} />;
 };

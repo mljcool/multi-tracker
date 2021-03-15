@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import LazyLoad from 'react-lazyload';
+
 SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 
 const getData = () => {
@@ -12,8 +14,17 @@ const getData = () => {
   return slider;
 };
 
+const Spinner = () => {
+  return (
+    <div>
+      <h3>Loading.....</h3>
+    </div>
+  );
+};
+
 const ShowCaseSection = () => {
   const [state, setstate] = useState([]);
+
   useEffect(() => {
     setstate(getData());
   }, []);
@@ -24,45 +35,46 @@ const ShowCaseSection = () => {
           <h2>Show case</h2>
           <p>ALL ABOUT THE FUN OF THE GAME</p>
         </header>
-
         <div className='testimonials-slider swiper-container'>
-          <div className='phone-frame'>
-            <img src={'img/show-case/i-phone.png'} className='img-fluid' />
-          </div>
-          <Swiper
-            speed={600}
-            loop={true}
-            slidesPerView={'auto'}
-            autoplay={{ delay: 100 }}
-            pagination={false}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 40,
-              },
+          <LazyLoad placeholder={<Spinner />}>
+            <div className='phone-frame'>
+              <img src={'img/show-case/i-phone.png'} className='img-fluid' />
+            </div>
+            <Swiper
+              speed={600}
+              loop={true}
+              slidesPerView={'auto'}
+              autoplay={{ delay: 1000 }}
+              pagination={false}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
 
-              1200: {
-                slidesPerView: 3,
-              },
-            }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}>
-            {state.map((data) => (
-              <SwiperSlide key={data.id}>
-                <div className='swiper-slide'>
-                  <div className='showcases-item'>
-                    <div className='profile mt-auto'>
-                      <img
-                        src={`/img/show-case/s${data.name}.png`}
-                        className='show-img-slides img-fluid'
-                        alt=''
-                      />
+                1200: {
+                  slidesPerView: 3,
+                },
+              }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log('slide change')}>
+              {state.map((data) => (
+                <SwiperSlide key={data.id}>
+                  <div className='swiper-slide'>
+                    <div className='showcases-item'>
+                      <div className='profile mt-auto'>
+                        <img
+                          src={`/img/show-case/s${data.name}.png`}
+                          className='show-img-slides img-fluid'
+                          alt=''
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </LazyLoad>
         </div>
       </div>
     </section>
