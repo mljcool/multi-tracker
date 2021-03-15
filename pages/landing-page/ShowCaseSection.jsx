@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
+import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-SwiperCore.use([Navigation, Pagination, A11y]);
+SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 
 const getData = () => {
   let slider = [];
@@ -33,11 +33,7 @@ const ShowCaseSection = () => {
             speed={600}
             loop={true}
             slidesPerView={'auto'}
-            autoplay={{
-              delay: 200,
-              disableOnInteraction: false,
-              waitForTransition: true,
-            }}
+            autoplay={{ delay: 100 }}
             pagination={false}
             breakpoints={{
               320: {

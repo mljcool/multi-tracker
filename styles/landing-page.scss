@@ -234,6 +234,16 @@ section {
 --------------------------------------------------------------*/
 .animation-sequence {
   position: absolute;
+  top: -1rem;
+  .seq-4 {
+    position: absolute;
+    right: 9rem;
+    transform: skewY(329deg);
+  }
+  .seq-3 {
+    position: absolute;
+    transform: skewY(342deg);
+  }
 }
 .hero {
   // background: black;
@@ -247,7 +257,8 @@ section {
   }
   h1 {
     margin: 0;
-    font-size: 48px;
+    line-height: 4.5rem;
+    font-size: 85px;
     font-weight: 700;
     color: white;
   }
@@ -268,6 +279,10 @@ section {
   .hero-img {
     text-align: right;
     z-index: 999;
+  }
+  .hero-details {
+    margin-top: -5rem;
+    padding-left: 4rem;
   }
 }
 .background-clip {
@@ -327,6 +342,7 @@ section {
 # key features-sections
 --------------------------------------------------------------*/
 .key-features-sections {
+  margin-top: 6rem;
   width: 100%;
   .feat-h {
     color: #29b473;
@@ -370,7 +386,7 @@ section {
       z-index: -1;
       position: relative;
       top: -13rem;
-      left: -3rem;
+      left: -5rem;
     }
   }
   .tracker-img {
@@ -452,7 +468,6 @@ section {
     color: #29b473;
     padding-bottom: 10pt;
     font-size: 15px;
-    font-weight: 700;
   }
   h1 {
     margin: 0;

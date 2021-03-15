@@ -9,7 +9,7 @@ const HeroSection = () => {
             <div className='box' data-aos='fade-down-left' data-aos-delay='200'>
               <img
                 src='/img/hero/seq-1.png'
-                className='img-fluid c-icons-tv'
+                className='img-fluid seq-1'
                 alt=''
               />
             </div>
@@ -20,7 +20,7 @@ const HeroSection = () => {
               <div className='custom-icons'>
                 <img
                   src='/img/hero/seq-2.png'
-                  className='img-fluid c-icons-ticket'
+                  className='img-fluid seq-2'
                   alt=''
                 />
               </div>
@@ -31,7 +31,7 @@ const HeroSection = () => {
             <div className='box' data-aos='fade-down-left' data-aos-delay='600'>
               <img
                 src='/img/hero/seq-3.png'
-                className='img-fluid c-icons-timelapse'
+                className='img-fluid seq-3'
                 alt=''
               />
             </div>
@@ -40,7 +40,7 @@ const HeroSection = () => {
             <div className='box' data-aos='fade-down-left' data-aos-delay='600'>
               <img
                 src='/img/hero/seq-4.png'
-                className='img-fluid c-icons-timelapse'
+                className='img-fluid seq-4'
                 alt=''
               />
             </div>
@@ -68,9 +68,15 @@ const HeroSection = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6 hero-img'>
-              <img src='/img/hero/hero.png' className='img-fluid' alt='' />
+              <img
+                src='/img/hero/hero.png'
+                className='img-fluid'
+                data-aos='fade-up'
+                data-aos-delay='200'
+                alt=''
+              />
             </div>
-            <div className='col-lg-6 d-flex flex-column justify-content-center'>
+            <div className='col-lg-6 d-flex flex-column justify-content-center hero-details'>
               <h1 data-aos='fade-up'>
                 TRACK <br /> YOUR MULTI, <br />
                 REAL TIME.
