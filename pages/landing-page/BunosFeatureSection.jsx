@@ -13,7 +13,7 @@ function BunosFeatureSection() {
               CELEBRATE <br /> THE WINNING <br />
               MOMENT WITH <br /> YOUR MATES
             </h1>
-            <h2>
+            <h2 className='bunos-desc'>
               if your multi isn't going well, check in to see how your
               <br />
               mates are going and what legs they have to go. This <br />
@@ -37,6 +37,43 @@ function BunosFeatureSection() {
               className='img-fluid'
               alt=''
             />
+            <div className='bunos-animations'>
+              <div className='balls'>
+                <img
+                  src='/img/bunos-section/animations/ball1.png'
+                  className='img-fluid basket-ball'
+                  alt=''
+                />
+                <img
+                  src='/img/bunos-section/animations/ball2.png'
+                  className='img-fluid soccer-ball'
+                  alt=''
+                />
+                <img
+                  src='/img/bunos-section/animations/ball3.png'
+                  className='img-fluid foot-ball'
+                  alt=''
+                />
+              </div>
+              <div className='mens'>
+                <img
+                  src='/img/bunos-section/animations/m1.png'
+                  className='img-fluid men1'
+                  alt=''
+                />
+                <img
+                  src='/img/bunos-section/animations/m2.png'
+                  className='img-fluid men2'
+                  alt=''
+                />
+                <img
+                  src='/img/bunos-section/animations/m3.png'
+                  className='img-fluid men3'
+                  alt=''
+                />
+              </div>
+              {/*  */}
+            </div>
           </div>
         </div>
       </div>

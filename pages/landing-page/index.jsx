@@ -7,6 +7,7 @@ import BenefitsSection from './BenefitsSection';
 import BunosFeatureSection from './BunosFeatureSection';
 import KeyFeature from './KeyFeature';
 
+
 function index() {
   return (
     <Fragment>
@@ -20,5 +21,14 @@ function index() {
     </Fragment>
   );
 }
+
+export async function getStaticProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+
+
+
 
 export default index;
