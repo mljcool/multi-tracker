@@ -42,16 +42,22 @@ function BunosFeatureSection() {
                 <img
                   src='/img/bunos-section/animations/ball1.png'
                   className='img-fluid basket-ball'
+                  data-aos='fade-up-left'
+                  data-aos-delay='200'
                   alt=''
                 />
                 <img
                   src='/img/bunos-section/animations/ball2.png'
                   className='img-fluid soccer-ball'
+                  data-aos='fade-up-left'
+                  data-aos-delay='200'
                   alt=''
                 />
                 <img
                   src='/img/bunos-section/animations/ball3.png'
                   className='img-fluid foot-ball'
+                  data-aos='fade-up-left'
+                  data-aos-delay='200'
                   alt=''
                 />
               </div>
@@ -59,16 +65,22 @@ function BunosFeatureSection() {
                 <img
                   src='/img/bunos-section/animations/m1.png'
                   className='img-fluid men1'
+                  data-aos='fade-down-right'
+                  data-aos-delay='200'
                   alt=''
                 />
                 <img
                   src='/img/bunos-section/animations/m2.png'
                   className='img-fluid men2'
+                  data-aos='fade-down-right'
+                  data-aos-delay='200'
                   alt=''
                 />
                 <img
                   src='/img/bunos-section/animations/m3.png'
                   className='img-fluid men3'
+                  data-aos='fade-down-right'
+                  data-aos-delay='200'
                   alt=''
                 />
               </div>
