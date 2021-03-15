@@ -11,7 +11,7 @@ function BenefitsSection() {
 
         <div className='row'>
           <div className='col-lg-4'>
-            <div className='box' data-aos='fade-down-left' data-aos-delay='200'>
+            <div className='box' >
               <div className='custom-icons'>
                 <a className='box-icons'> </a>
                 <img
@@ -28,7 +28,7 @@ function BenefitsSection() {
           </div>
 
           <div className='col-lg-4 mt-4 mt-lg-0'>
-            <div className='box' data-aos='fade-down-left' data-aos-delay='400'>
+            <div className='box' >
               <div className='custom-icons'>
                 <a className='box-icons'></a>
                 <img
@@ -47,7 +47,7 @@ function BenefitsSection() {
           </div>
 
           <div className='col-lg-4 mt-4 mt-lg-0'>
-            <div className='box' data-aos='fade-down-left' data-aos-delay='600'>
+            <div className='box' >
               <div className='custom-icons'>
                 <a className='box-icons'></a>
                 <img
