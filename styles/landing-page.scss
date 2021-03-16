@@ -35,7 +35,7 @@ h6 {
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 20px 0;
+  // padding: 20px 0;
   overflow: hidden;
 }
 
@@ -204,7 +204,6 @@ section {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  margin-top: 10pt;
   line-height: 0;
   .header-scrolled {
     background: #fff;
@@ -217,6 +216,7 @@ section {
       max-height: 40px;
       margin-right: 6px;
       width: 195px;
+      z-index: 99;
     }
     span {
       font-size: 30px;
@@ -232,29 +232,47 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.animation-sequence {
-  position: absolute;
-  top: -1rem;
-  .seq-4 {
-    position: absolute;
-    right: 9rem;
-    transform: skewY(329deg);
-  }
-  .seq-3 {
-    position: absolute;
-    transform: skewY(342deg);
-  }
-}
+
 .hero {
-  // background: black;
-  width: 100%;
-  .animate-sequence {
+  .animation-sequence {
     position: absolute;
-    width: 100%;
-    // z-index: 99;
-    display: flex;
-    justify-content: space-around;
+    width: inherit !important;
+    height: 100%;
+    img {
+      /* width: 100px; */
+      height: 77% !important;
+    }
+    .seq-1 {
+      position: relative;
+      top: -59rem;
+      left: -160px;
+    }
+
+    .seq-2 {
+      position: relative;
+      top: -74rem;
+      right: 14rem;
+    }
+
+    .seq-lap {
+      position: relative;
+      top: -8rem;
+      right: 38rem;
+    }
   }
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .hero-wrapper {
+    background: black;
+    background-image: url('/img/hero/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+  }
+  width: 100%;
   h1 {
     margin: 0;
     line-height: 4.5rem;
@@ -279,32 +297,100 @@ section {
   .hero-img {
     text-align: right;
     z-index: 999;
+    img {
+      visibility: hidden;
+    }
   }
   .hero-details {
-    margin-top: -5rem;
-    padding-left: 4rem;
+    margin-top: -8rem;
+    padding-left: 0rem;
   }
-}
-.background-clip {
-  z-index: -99;
-  background: black;
-  width: 100%;
-  height: 162vh;
-  position: absolute;
-  clip-path: polygon(0 0, 100% 0, 100% 82%, 0 70%);
-  .background-clip-two {
-    background: #67fe17;
-    width: 64%;
-    height: 162vh;
+  .image-phone {
     position: absolute;
-    clip-path: polygon(0 0, 0% 162%, 97% 0);
-    // clip-path: polygon(0 0, 105% 0, 39% 79%, 0% 93%);
+    left: 16rem;
   }
 }
-
-@media (min-width: 1024px) {
+@media (max-width: 1600px) and (min-width: 985px) {
   .hero {
-    background-attachment: fixed;
+    .hero-wrapper {
+      background: black;
+      background-image: url('/img/hero/bg-sequence.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+    }
+    .image-phone {
+      top: 2rem;
+      left: 3rem !important;
+      // background: red;
+      width: 40%;
+    }
+    .animation-sequence {
+      display: none !important;
+    }
+  }
+}
+@media (max-width: 985px) {
+  .hero {
+    .image-phone {
+      display: none;
+    }
+    .hero-img {
+      img {
+        visibility: visible !important;
+      }
+    }
+    .hero-details {
+      margin-top: 0rem !important;
+      padding-left: 2rem !important;
+      text-align: center;
+    }
+    .hero-wrapper {
+      clip-path: none !important;
+    }
+    .animation-sequence {
+      display: none !important;
+    }
+    .hero-wrapper {
+      background: black;
+      background-image: url('/img/hero/bg-sequence.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+    }
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    .image-phone {
+      display: none;
+    }
+    .hero-img {
+      img {
+        visibility: visible !important;
+      }
+    }
+    .hero-details {
+      margin-top: 0rem !important;
+      padding-left: 2rem !important;
+      text-align: center;
+    }
+    .hero-wrapper {
+      clip-path: none !important;
+    }
+    .animation-sequence {
+      display: none !important;
+    }
+    .hero-wrapper {
+      background: black;
+      background-image: url('/img/hero/bg-sequence.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+    }
   }
 }
 
@@ -455,6 +541,15 @@ section {
     img {
       position: absolute;
       margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 1800px) and (min-width: 998px) {
+  .key-features-sections {
+    .basketball {
+      left: 8rem !important;
+      top: -10.6rem !important;
     }
   }
 }

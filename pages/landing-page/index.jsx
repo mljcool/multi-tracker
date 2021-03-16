@@ -1,4 +1,3 @@
-import HeaderNav from '@components/landing-page/HeaderNav';
 import React, { Fragment } from 'react';
 import ContactUsSection from './ContactUsSection';
 import HeroSection from './HeroSection';
@@ -7,11 +6,9 @@ import BenefitsSection from './BenefitsSection';
 import BunosFeatureSection from './BunosFeatureSection';
 import KeyFeature from './KeyFeature';
 
-
 function index() {
   return (
     <Fragment>
-      <HeaderNav />
       <HeroSection />
       <BenefitsSection />
       <KeyFeature />
@@ -25,10 +22,7 @@ function index() {
 export async function getStaticProps(context) {
   return {
     props: {}, // will be passed to the page component as props
-  }
+  };
 }
-
-
-
 
 export default index;
