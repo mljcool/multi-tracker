@@ -556,6 +556,62 @@ section {
     }
   }
 }
+@media (max-width: 1800px) and (min-width: 1300px) {
+  .bunos-animations {
+    .basket-ball {
+      left: 16rem !important;
+      top: -4rem;
+    }
+    .soccer-ball {
+      top: 4rem !important;
+      left: 9rem !important;
+    }
+    .foot-ball {
+      top: 14rem !important;
+      left: 10rem !important;
+    }
+    .men1 {
+      top: 0rem !important;
+      right: -2rem !important;
+    }
+    .men2 {
+      top: 10rem !important;
+      right: -3rem !important;
+    }
+    .men3 {
+      top: 18rem !important;
+      right: 3rem !important;
+    }
+  }
+}
+@media (max-width: 1290px) {
+  .bunos-animations {
+    .basket-ball {
+      left: 16rem !important;
+      top: -4rem;
+    }
+    .soccer-ball {
+      top: 4rem !important;
+      left: 9rem !important;
+    }
+    .foot-ball {
+      top: 14rem !important;
+      left: 10rem !important;
+    }
+    .men1 {
+      top: 0rem !important;
+      right: -2rem !important;
+    }
+    .men2 {
+      top: 10rem !important;
+      right: -3rem !important;
+    }
+    .men3 {
+      top: 18rem !important;
+      right: 3rem !important;
+    }
+  }
+}
 
 @media (min-width: 1024px) {
   .hero {
