@@ -8,25 +8,25 @@ const HeroSection = () => {
           <HeaderNav />
 
           <div className='row'>
-            <div class='animation-sequence'>
+            <div className='animation-sequence'>
               <img
                 src='img/hero/seq/seq-3.png'
-                class='seq3'
+                className='seq3'
                 data-aos='fade-down-left'
               />
               <img
                 src='img/hero/seq/seq-center-lap.png'
-                class='seq-lap'
+                className='seq-lap'
                 data-aos='fade-down-left'
               />
               <img
                 src='img/hero/seq/seq-2.png'
-                class='seq-2'
+                className='seq-2'
                 data-aos='fade-down-left'
               />
               <img
                 src='img/hero/seq/seq-1.png'
-                class='seq-1'
+                className='seq-1'
                 data-aos='fade-down-left'
               />
             </div>
