@@ -866,13 +866,17 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .show-case-section {
+  .img-fluid {
+    max-width: 86% !important;
+    /* height: auto; */
+  }
   .show-case-wrapper {
     @media (min-width: 1400px) {
       max-width: 100% !important;
     }
   }
   .testimonials-slider {
-    margin-top: -55rem;
+    margin-top: -49rem;
   }
   .phone-frame {
     display: flex;
@@ -937,8 +941,26 @@ section {
     .swiper-pagination {
       margin-top: 0;
     }
+    .iphone-frame {
+      width: 423px !important;
+      height: 59.8rem !important;
+    }
+    .show-img-slides {
+      border-radius: 30px;
+    }
   }
 }
+// @media (max-width: 1199px) and (min-width: 1398px) {
+//   .show-case-section {
+//     .iphone-frame {
+//       width: 423px !important;
+//       height: 59.8rem !important;
+//     }
+//     .show-img-slides {
+//       border-radius: 30px;
+//     }
+//   }
+// }
 
 @media (min-width: 1200px) {
   .show-case-section .swiper-slide-next {
@@ -954,7 +976,7 @@ section {
 
 @media (max-width: 1401px) {
   .iphone-frame {
-    width: 452px !important;
+    width: 385px !important;
     height: 59.8rem !important;
   }
 }
