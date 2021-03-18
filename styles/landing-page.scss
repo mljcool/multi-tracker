@@ -243,9 +243,9 @@ section {
       height: 77% !important;
     }
     .seq-1 {
-      position: relative;
-      top: -59rem;
-      left: -160px;
+      position: absolute;
+      top: -11rem;
+      right: 46rem;
     }
 
     .seq-2 {
@@ -548,6 +548,8 @@ section {
 @media (max-width: 1800px) and (min-width: 998px) {
   .key-features-sections {
     .basketball {
+      height: 43rem;
+      width: 44rem;
       left: 8rem !important;
       top: -10.6rem !important;
     }
@@ -648,6 +650,42 @@ section {
     margin-top: -9rem;
     > img {
       width: 124px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .bunos-sections {
+    .bunos-animations {
+      .basket-ball {
+        left: 14rem !important;
+        top: 2rem !important;
+        width: 20%;
+      }
+      .soccer-ball {
+        top: 9rem !important;
+        left: 9rem !important;
+        width: 23% !important;
+      }
+      .foot-ball {
+        top: 18rem !important;
+        left: 9rem !important;
+        width: 24%;
+      }
+      .men1 {
+        top: 1rem !important;
+        right: -6rem !important;
+        width: 20%;
+      }
+      .men2 {
+        top: 10rem !important;
+        right: -5rem !important;
+      }
+      .men3 {
+        top: 20rem !important;
+        right: 0rem !important;
+        width: 19%;
+      }
     }
   }
 }
@@ -911,6 +949,13 @@ section {
     .show-img-slides {
       border-radius: 30px;
     }
+  }
+}
+
+@media (max-width: 1401px) {
+  .iphone-frame {
+    width: 452px !important;
+    height: 59.8rem !important;
   }
 }
 

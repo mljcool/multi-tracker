@@ -38,7 +38,10 @@ const ShowCaseSection = () => {
         <div className='testimonials-slider swiper-container'>
           <LazyLoad placeholder={<Spinner />}>
             <div className='phone-frame'>
-              <img src={'img/show-case/i-phone.png'} className='img-fluid' />
+              <img
+                src={'img/show-case/i-phone.png'}
+                className='img-fluid iphone-frame'
+              />
             </div>
             <Swiper
               speed={600}
