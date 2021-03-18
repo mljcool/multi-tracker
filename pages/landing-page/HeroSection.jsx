@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import HeaderNav from '@components/landing-page/HeaderNav';
+import useWindowDimensions from '@hooks/useWindowDimensions';
+
 const HeroSection = () => {
   return (
     <Fragment>
